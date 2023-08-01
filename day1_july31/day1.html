@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Israel</title>
+</head>
+<body>
+    <h1 id="#">Image in HTML</h1>
+    <p>Add images into a webpage</p>
+    <img src="images/crab.jpg" alt="photo of crab" title="Mojo Jojo's Giant Crab" width="50%">
+    <figure>
+        <img src="images/crab.jpg" alt="photo of crab" title="Mojo Jojo's Giant Crab" width="100%">
+        <img src="images/crab.jpg" alt="photo of crab" title="Mojo Jojo's Giant Crab" width="49%">
+        <img src="images/crab.jpg" alt="photo of crab" title="Mojo Jojo's Giant Crab" width="49%">
+        <figcaption>Power Girls facing off against Giant Crab</figcaption>
+    </figure>
+    <!---->
+    <h1 id="#pictag">Picture tag</h1>
+    <p>Resize the browser to load different sea creatures</p>
+    <picture>
+        <source media="(min-width:1100px)" srcset="images/crab.jpg">
+        <source media="(min-width:800px)" srcset="images/lobster.jpg">
+        <source media="(min-width:500px)" srcset="images/squid.jpg">
+        <img src="images/octopus.jpg" alt="photo of octopus" width="60%">
+    </picture>
+
+    <!--LINKS-->
+    <h1 id="#links">Link to other sites</h1>
+    <a href="https://www.engrish.com/" target="_blank" rel="noopener noreferrer">Products with cheap English</a>
+    <p><a href="mailto:strickly4damoney@gmail.com">Email for luck</a></p>
+    <p>Follow us</p>
+    <figure>
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/twitter.png" alt="image of old twitter" width="20%">
+        </a>
+        <a href="https://www.x.com/" target="_blank" rel="noopener no referrer">
+            <img src="images/x.png" alt="image of new twitter sorry meant x" width="20%">
+        </a>
+    </figure>
+    <h1>Link to a specific part of the same page</h1>
+    <ul>
+        <li>
+            <a href="#">Top of the page</a>
+        </li>
+        <li>
+            <a href="#picturetag">Picture Tag</a>
+        </li>
+        <li>
+            <a href="#links">Links</a>
+            <a href="tel:+13477465543">Call Us Now</a>
+        </li>
+    </ul>
+    <h1>Map Tag</h1>
+    <figure>
+        <img src="images/octopus.jpg" alt="photo of octopus" width="500px" usemap="#octopus">
+    </figure>
+    <map name="octopus">
+        <area shape="rect" coords="250px,35px,175px,90px" href="https://www.nationalgeographic.com/animals/invertebrates/facts/octopus-facts" target="_blank" rel="noopener noreferrer">
+        <area shape="circle" coords="100px,210px,45px" href="https://en.wikipedia.org/wiki/Octopus" target="_blank" rel="noopener noreferrer">
+    </map>
+    <br>
+    <footer>Day 1: HTML review @NickIsrael</footer>
+
+</body> 
+</html>
