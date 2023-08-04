@@ -1,0 +1,124 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+img{width: 100%; display: block;}
+/* card */
+.card{
+    width: 22%;
+    box-shadow: 0px 0px 5px 1px gray;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2% 0%;
+    transition: ease 800ms;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px 1px black;
+    transform: scale(1.1);
+}
+.cardContent{
+    padding: 0.5em 0.8em;
+}
+.cardContent p:nth-child(1){
+    color: coral;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.cardContent p:nth-child(2){color: darkblue;}
+.cardContainer{
+    display: flex;
+    width: 90%;
+    margin: 5em auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* images card */
+.imgCard{
+    width: 45%;
+    box-shadow: 1px 1px 5px rgb(50, 50, 50);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.imgCardContent{
+    position: absolute;
+    background-color: rgba(200, 100, 50, 0.5);
+    top: 20%;
+    bottom: 20%;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+}
+.p1_img{
+    color: crimson;
+    font-size: 2em;
+    box-shadow: 2px 2px 7px rgb(25, 25, 25);
+}
+.imgCardContent2{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    background-color: aqua ;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p1_img2{
+    color: green;
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+.p2_img2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    margin-top: -2em;
+}
+.imgCard:hover .p1_img2{
+    color: yellow;
+    font-size: 2.2em;
+}
+.imgCard:hover{
+    box-shadow: none;
+    border: ridge 2px orangered;
+}
+/* simple element animation */
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition: ease-in-out 1s;
+}
+.square:hover{
+    border-radius: 50%;
+    background-color: darkcyan;
+}
+.zoomContainer{
+    width: 300px;
+    position: relative;
+    margin: 5em;
+    overflow: hidden;
+}
+.zoomMSG, .slideMSG{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(50, 50, 50, 0.7);
+    font-size: 2em;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 20%;
+    transition: ease 500ms;
+}
+.zoomMSG{
+    transform: scale(0);
+}
+.zoomContainer:hover .zoomMSG{
+    transform: scale(1);
+}
+/* slide animation */
+.slideMSG{
+    overflow: hidden;
+}
+.slideMSG:hover{
+    transform: translateX(300px);
+}
