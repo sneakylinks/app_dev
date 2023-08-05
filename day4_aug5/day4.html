@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Israel</title>
+</head>
+<body>
+    <h1>Nick Israel</h1>
+    <script src="day4.js">
+        console.log("Professor Wu")
+        let animal = "cat"
+        let age = 35
+        let bool1 = true
+        let var1 = ""
+        let var2 = null
+        let var3
+        // prompt method
+        let name = prompt("Enter a name: ")
+        let num1 = prompt("Enter number 1")
+        num1 = parseInt(num1)
+        let num2 = parseInt(prompt("Enter number 2"))
+        //check if num1 and num2 is a number
+        let checkNum1 = isNaN(num1)
+        let checkNum2 = isNaN(num2)
+        if (num1===null){
+            console.log("You didn't enter a number 1!")
+            num1=0
+        }
+        
+        // display value of variable
+        console.log("Number 1 = ", num1, "number 2 = ", num2)
+        console.log("Number 1 = " + num1 + "number 2 = " + num2)
+        console.log(`Number 1 = ${num1} number = ${num2}`)
+        console.log(`Welcome to JS ${name}`)
+        // ARRAYS
+        let fruits = ['oranges', 'apples', 'peaches']
+        console.log(`The second item in array fruits is ${fruits[1]}`)
+        let meals = ['breakfast', ['egg', 'bread', 'juice'], 'lunch', ['firsh', 'salad']]
+        console.log(`Original array = ${fruits}`)
+        // add values to the beginning of an array
+        fruits.unshift('bananas', 23)
+        console.log(`Array after unshift method = ${fruits}`)
+        // remove the first element in an array
+        fruits.shift()
+        console.log(`Array after shift method = ${fruits}`)
+        // indexOf method
+        let findFruit = 'peaches'
+        let fruit1 = fruits.indexOf(findFruit)
+        console.log(`${findFruit} has index = ${fruit1}`)
+        /*------------------------------- CONDITIONAL STATEMENT ------------------------*/
+        let day = true, night = false
+        let yourage = 9
+
+        if(day){
+            console.log(`The statement is ${day}`)
+        }
+
+        if (yourage>=21){
+            console.log(`${yourage} is an adult age!`)
+        }
+        else{
+            console.log(`At ${yourage}, you are a kid!`)
+        }
+        console.log('End of if statement')
+        // check if  two numbers are the smae, greather than, or less than
+        if(num1===num2){
+            console.log(`${num1} is the same as ${num2}`)
+        }
+        else if(num1>num2){
+            console.log(`${num1} is greather than ${num2}`)
+        }
+        else{
+            console.log(`${num1} is less than ${num2}`)
+        }
+        // if user didn't enter a name
+        if (name==="" || name === null){
+            console.log("You did not enter a name!")
+        }
+        else{
+            console.log(`Welcome to JS ${name}!`)
+        }
+        // if a password is at least 6 characters and has no space
+        let password = prompt("Enter a password: ")
+        if(password.lenght<6){
+            console.log("Password has less than 6 characters!")
+        }  
+        else{
+            console.log("Your password has been saved!")
+            if(password.indexOf('')===-1){
+                console.log(`Great! Password has no space. Your password is ${password}`)
+            }
+            else{
+                console.log("WARNING! Your password can't have space.")
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
