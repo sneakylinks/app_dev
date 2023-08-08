@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Israel</title>
+    <style>
+        .sub{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: coral;
+            text-align: center;
+        }
+        .guessNumber{
+            width: 150px;
+            padding: 15%;
+            text-align: center;
+            font-size: 5em;
+            color: blue;
+            background-color: bisque;
+            margin: 1em;
+            margin-bottom: 0.3em;
+            display: none;
+        }
+        .top{
+            position: fixed;
+            bottom: 2%;
+            right: 2%;
+            background-color: rgba(20, 20, 20, 0.7);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2em;
+            border-radius: 50%;
+            padding: 0.1em;
+            overflow: hidden;
+            transition: ease 500ms;
+        }
+        .top a{text-decoration: none;}
+        .top:hover{
+            opacity: 0.8;
+            box-shadow: 0px 0px 2px 2px black;
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <h1>Nick Israel</h1>
+    <div id="userName">
+        <p>First name</p>
+        <p>Last name</p>
+        <p class="name1">Full name</p>
+    </div>
+    <h2>parent/sibling/child</h2>
+    <p>Fruits shopping list</p>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Grapes</li>
+        <li>Strawberries</li>
+        <li>Watermelon</li>
+    </ul>
+    <h2>Events with JavaScript</h2>
+    <button onclick="alert('You\'ve Clicked Me!')">Click Here</button>
+    <button class="btn1">Press Me!</button>
+    <div class="guessNumber">
+        ?
+    </div>
+    <button class="btnGuessNum">Generate a random number</button>
+    <section style="margin-top: 2em;">
+        <button id="btnMouseEvent">Push Me</button>
+        <p class="mouseoutDisplay">Message for Mouse Out</p>
+        <p class="dblclickDisplay">Message for Double Click</p>
+    </section>
+    <div class="top">
+        <span>&#9978;</span>
+    </div>
+    <script src="day5.js"></script>
+</body>
+</html>
