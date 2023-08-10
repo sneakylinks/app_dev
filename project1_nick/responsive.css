@@ -1,0 +1,19 @@
+.animate {
+    background-image: none;
+    position: relative;
+    padding: 20%;
+    background-repeat: no-repeat;
+    margin-top: 5em;
+    margin-left: 25%;
+    animation-name: animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+  }
+
+  @keyframes animation {
+    0%   {background-image: url(images/plainpineapple.png);}
+    25%  {background-image: url(images/plainorange.png);}
+    50%  {background-image: url(images/plainbananas.png);}
+    100% {background-image: url(images/plainpassionfruit.png);}
+  }

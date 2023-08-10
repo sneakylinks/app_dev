@@ -1,0 +1,91 @@
+html{scroll-behavior: smooth;}
+body, html{height: 100%;}
+img{width: 100%; display: block;}
+.heroImage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/mango.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.heroText{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.mainButton:hover{
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.card{
+    width: 23%;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: 2% 0%;
+    transition: ease 250ms;
+}
+.card:hover{
+    box-shadow: 0px 0px 8px 3px salmon;
+    transform: scale(0.9);
+}
+.cardCaption{
+    position: absolute;
+    color: antiquewhite;
+    top: 1%;
+    bottom: 1%;
+    left: 5%;
+    right: 5%;
+    text-align: left;
+    text-shadow: 1px 1px gray;
+    transition: ease 250ms;
+}
+.cardHolder{
+    display: flex;
+    width: 95%;
+    margin: 3em auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.blogCard{
+    width: 20%;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,2);
+    transition: ease 0.2s;
+    border: ridge 1px black;
+}
+.blogCard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,2);
+    border: none;
+}
+.blogContainer{
+    position: relative;
+    padding: 2px 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: grey;
+}
+#hBlog{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    color: black;
+}
+.blogHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: salmon;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+}
+a{text-decoration: none;}
